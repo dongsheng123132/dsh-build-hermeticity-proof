@@ -1,0 +1,5 @@
+- insert:
+    - id: dsh-build-hermeticity-proof
+      name: dsh-build-hermeticity-proof
+      config:
+        workspaceRoot: .

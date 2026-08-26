@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "proofId": "hermetic-proof-20260826",
+  "evaluationTime": "2026-08-26T11:00:00.000Z",
+  "run": {
+    "receiptSha256": "0000000000000000000000000000000000000000000000000000000000000000",
+    "builderHash": "9999999999999999999999999999999999999999999999999999999999999999",
+    "sourceRevisionSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "invocationSha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "startedAt": "2026-08-26T09:00:00.000Z",
+    "finishedAt": "2026-08-26T10:00:00.000Z",
+    "status": "succeeded"
+  },
+  "policy": {
+    "sourceRevisionSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "invocationSha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "fixedTimeSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "fixedRandomSeedSha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+    "declaredInputHashes": [
+      "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+      "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+    ],
+    "declaredOutputHashes": [
+      "1111111111111111111111111111111111111111111111111111111111111111",
+      "2222222222222222222222222222222222222222222222222222222222222222"
+    ],
+    "allowedEnvironment": [
+      { "nameHash": "3333333333333333333333333333333333333333333333333333333333333333", "valueSha256": "4444444444444444444444444444444444444444444444444444444444444444" }
+    ],
+    "networkPolicy": "deny",
+    "requireMonotonicSequence": true,
+    "maxEvidenceAgeMs": 14400000
+  },
+  "events": [
+    { "id": "event-001", "sequence": 1, "kind": "file-read", "subjectHash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee", "valueSha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee", "result": "observed", "occurredAt": "2026-08-26T09:05:00.000Z" },
+    { "id": "event-002", "sequence": 2, "kind": "file-read", "subjectHash": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff", "valueSha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff", "result": "observed", "occurredAt": "2026-08-26T09:06:00.000Z" },
+    { "id": "event-003", "sequence": 3, "kind": "env-read", "subjectHash": "3333333333333333333333333333333333333333333333333333333333333333", "valueSha256": "4444444444444444444444444444444444444444444444444444444444444444", "result": "observed", "occurredAt": "2026-08-26T09:07:00.000Z" },
+    { "id": "event-004", "sequence": 4, "kind": "network", "subjectHash": "5555555555555555555555555555555555555555555555555555555555555555", "valueSha256": "6666666666666666666666666666666666666666666666666666666666666666", "result": "denied", "occurredAt": "2026-08-26T09:08:00.000Z" },
+    { "id": "event-005", "sequence": 5, "kind": "clock-read", "subjectHash": "7777777777777777777777777777777777777777777777777777777777777777", "valueSha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc", "result": "observed", "occurredAt": "2026-08-26T09:09:00.000Z" },
+    { "id": "event-006", "sequence": 6, "kind": "random-read", "subjectHash": "8888888888888888888888888888888888888888888888888888888888888888", "valueSha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd", "result": "observed", "occurredAt": "2026-08-26T09:10:00.000Z" },
+    { "id": "event-007", "sequence": 7, "kind": "file-write", "subjectHash": "1111111111111111111111111111111111111111111111111111111111111111", "valueSha256": "1111111111111111111111111111111111111111111111111111111111111111", "result": "observed", "occurredAt": "2026-08-26T09:55:00.000Z" },
+    { "id": "event-008", "sequence": 8, "kind": "file-write", "subjectHash": "2222222222222222222222222222222222222222222222222222222222222222", "valueSha256": "2222222222222222222222222222222222222222222222222222222222222222", "result": "observed", "occurredAt": "2026-08-26T09:56:00.000Z" }
+  ]
+}

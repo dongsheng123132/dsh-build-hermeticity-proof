@@ -1,0 +1,3 @@
+{
+  "mcpServers": { "dsh-build-hermeticity-proof": { "command": "node", "args": ["${PLUGIN_ROOT}/mcp-server.mjs"] } }
+}
