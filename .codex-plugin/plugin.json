@@ -1,19 +1,31 @@
 {
   "name": "dsh-build-hermeticity-proof",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Offline proof that recorded build accesses stayed inside a declared input and output closure",
-  "author": { "name": "dongsheng123132" },
+  "author": {
+    "name": "dongsheng123132"
+  },
   "homepage": "https://github.com/dongsheng123132/dsh-build-hermeticity-proof",
   "repository": "https://github.com/dongsheng123132/dsh-build-hermeticity-proof",
   "license": "MIT",
-  "keywords": ["deepseek-harness", "dsh", "hermetic-build", "supply-chain", "evidence"],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "hermetic-build",
+    "supply-chain",
+    "evidence"
+  ],
   "interface": {
     "displayName": "DSH Build Hermeticity Proof",
     "shortDescription": "Verify a declared build access closure.",
     "longDescription": "Checks hash-only access receipts for undeclared files, environment, network, clock, randomness and outputs without running or sandboxing a build.",
     "developerName": "dongsheng123132",
     "category": "Developer Tools",
-    "capabilities": ["MCP tools", "DSH tools", "offline verification"],
+    "capabilities": [
+      "MCP tools",
+      "DSH tools",
+      "offline verification"
+    ],
     "defaultPrompt": "Verify this explicit build-hermeticity manifest and return only hash-based evidence."
   },
   "mcpServers": "./.mcp.json"
