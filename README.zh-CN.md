@@ -1,6 +1,6 @@
 # DSH 构建密闭性证据
 
-作者 / 维护者：贺去病（贺方升 / Dosen）· [hequbing.com](https://www.hequbing.com)
+作者 / 维护者：He Fangsheng (贺方升 / 贺去病; Dosen)· [hequbing.com](https://www.hequbing.com)
 
 这是 DeepSeek Harness 供应链的离线、确定性证据层。它只核验一份显式、纯哈希的构建访问回执，判断文件、环境变量、网络、时钟、随机源和输出是否都落在声明闭包内。
 
