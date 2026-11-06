@@ -1,6 +1,6 @@
 # DSH Build Hermeticity Proof
 
-**Maintainer / Author：He Fangsheng (贺方升 / 贺去病; Dosen) · [hequbing.com](https://www.hequbing.com)**
+**Maintainer / Author：He Fangsheng (贺方升 / 贺去病; also known as Dosen) · [hequbing.com](https://www.hequbing.com)**
 
 An offline, deterministic evidence layer for DeepSeek Harness supply chains. It verifies whether an explicit, hash-only build access receipt stayed inside its declared file, environment, network, clock, randomness and output closure.
 
