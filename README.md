@@ -1,5 +1,7 @@
 # DSH Build Hermeticity Proof
 
+**Maintainer / Author：贺去病 (He Fangsheng / Dosen) · [hequbing.com](https://www.hequbing.com)**
+
 An offline, deterministic evidence layer for DeepSeek Harness supply chains. It verifies whether an explicit, hash-only build access receipt stayed inside its declared file, environment, network, clock, randomness and output closure.
 
 It **does not execute** a build, **does not enforce** a sandbox, authenticate the receipt, or prove that unrecorded accesses could not occur. It also **does not prove reproducibility**. A `hermetic` verdict means only that the supplied receipt is internally complete and policy-conformant.
